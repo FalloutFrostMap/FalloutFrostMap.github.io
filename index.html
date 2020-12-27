@@ -1,0 +1,182 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>
+            FLUMP'S FROST METRO MAP (WIP)
+        </title>
+        <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script>
+        <style type="text/css">
+            /* Standard Styling */
+            body {
+                font-family: Verdana;
+                font-size: 8pt;
+            }
+
+            /* The main DIV for the map */
+            .subway-map {
+                margin: 0;
+                width: 500px;
+                height:410px;
+                background-color: white;
+            }
+
+            /* Text labels */
+            .text {
+                text-decoration: none;
+                color: black;
+            }
+
+            #legend {
+                float: left;
+                width: 250px;
+                height:400px;
+            }
+
+            #legend div {
+                height: 25px;
+            }
+
+            #legend span {
+                margin: 5px 5px 5px 0;
+            }
+            .subway-map span {
+                margin: 5px 5px 5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="subway-map" data-columns="32" data-rows="23" data-cellSize="30" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false"  data-lineWidth="8">
+
+            <ul data-color="rgb(150,150,150)" data-label="Gray Line">
+                <li data-coords="2,2" data-labelPos="S" data-marker="interchange">
+                    <a href="#">
+                        Concord\nCivic\nAccess
+                    </a>
+                </li>
+                <li data-coords="4,2"></li>
+            </ul>
+
+            <ul data-color="rgb(150,150,150)" data-label="Gray Line 2">
+                <li data-coords="17,6" data-labelPos="W" data-marker="interchange">
+                    <a href="#">
+                        Access\nTunnels
+                    </a>
+                </li>
+                <li data-coords="17,3.2"></li>
+                <li data-coords="18,2.2" data-dir="N"></li>
+                <li data-coords="19.45,2.2"></li>
+            </ul>
+
+            <ul data-color="rgb(150,150,150)" data-label="Gray Line 3">
+                <li data-coords="17,4"></li>
+                <li data-coords="18.4,4"></li>
+                <li data-coords="19.4,3" data-dir="E"></li>
+                <li data-coords="19.4,2"></li>
+            </ul>
+
+            <ul data-color="rgb(150,150,150)" data-label="Gray Line 4">
+                <li data-coords="17,6"></li>
+                <li data-coords="19.4,6"></li>
+                <li data-coords="20.4,5" data-dir="E"></li>
+                <li data-coords="20.4,3.4"></li>
+                <li data-coords="19.4,2.6" data-dir="N"></li>
+            </ul>
+
+            <ul data-color="rgb(255,0,0)" data-label="Red Line">
+                <li data-coords="4,2" data-labelPos="S"><a href="#">Subway\nLine</a></li>
+                <li data-coords="6,2" data-labelPos="S"><a href="#">Subway\nLine</a></li>
+                <li data-coords="8,2" data-labelPos="S"><a href="#">Subway\nLine</a></li>
+                <li data-coords="10,2" data-marker="interchange" data-labelPos="S"><a href="#">Lexington\nStation</a></li>
+                <li data-coords="12,2" data-labelPos="S"><a href="#">Subway\nLine</a></li>
+                <li data-coords="14,2" data-marker="interchange" data-labelPos="S"><a href="#">College\nSquare\nStation</a></li>  
+                <li data-coords="16,2" data-labelPos="S"><a href="#">Subway\nLine</a></li>
+                <li data-coords="18,2.05" data-labelPos="N" data-marker="@station"><a href="#">Subway Line</a></li>
+                <li data-coords="20.8,2" data-marker="@station" data-labelPos="SE"><a href="#">Valenti\nStation</a></li>  
+                <li data-coords="19.4,2" data-marker="@interchange" data-markerInfo="h5"><a href="#"> </a></li>
+                <li data-coords="20,2"></li> 
+                <li data-coords="21,3" data-dir="E"></li>  
+                <li data-coords="20.65,4.8" data-labelPos="W" data-marker="@station"><a href="#">Subway\nLine</a></li>
+                <li data-coords="20.8,6.8" data-labelPos="W" data-marker="@station"><a href="#">Subway\nLine</a></li>
+                <li data-coords="20.8,8.8" data-labelPos="W" data-marker="@interchange"><a href="#">Scollay\nStation</a></li>
+                <li data-coords="20.8,10.8" data-labelPos="W" data-marker="@interchange"><a href="#">Park Street\nStation</a></li>
+                <li data-coords="20.8,12.8" data-labelPos="W" data-marker="@station"><a href="#">Subway\nLine</a></li>
+                <li data-coords="20.9,15" data-labelPos="E" data-marker="@station"><a href="#">Subway\nLine</a></li>
+                <li data-coords="21,17" data-labelPos="E" data-marker="interchange"><a href="#">Post Office\nStation</a></li>
+                <li data-coords="21,19" data-labelPos="E"><a href="#">Subway\nLine</a></li>
+                <li data-coords="21,21" data-labelPos="E" data-marker="interchange"><a href="#">Andrew\nStation</a></li>
+            </ul>
+
+            <ul data-color="rgb(255,0,0)" data-label="Red Line 2">
+                <li data-coords="20,2"></li>
+                <li data-coords="21,3" data-dir="E"></li>
+                <li data-coords="22,4" data-dir="S"></li>
+                <li data-coords="23,5" data-dir="E"></li>
+                <li data-coords="23,9.4" data-labelPos="E"><a href="#">Subway\nLine</a></li>
+                <li data-coords="23,15"></li>
+                <li data-coords="22,16" data-dir="S"></li>
+                <li data-coords="21,17" data-dir="W"></li>
+            </ul>
+
+            <ul data-color="rgb(255,0,0)" data-label="Red Line 3">
+                <li data-coords="21,7"></li>
+                <li data-coords="22,8" data-dir="S"></li>
+                <li data-coords="23,9" data-dir="E"></li>
+            </ul>
+
+            <ul data-color="rgb(255,0,0)" data-label="Red Line 4">
+                <li data-coords="21,9"></li>
+                <li data-coords="22,10" data-dir="S"></li>
+                <li data-coords="23,11" data-dir="E"></li>
+            </ul>
+
+            <ul data-color="rgb(0,0,255)" data-label="Blue Line">
+                <li data-coords="15,15" data-labelPos="S" data-marker="interchange"><a href="#">Kenmore\nStation</a></li> 
+                <li data-coords="17,15" data-labelPos="S"><a href="#">Subway\nLine</a></li> 
+                <li data-coords="19,15" data-labelPos="S" data-marker="interchange"><a href="#">Copley\nStation</a></li> 
+                <li data-coords="19.6,15"></li>
+                <li data-coords="20.6,14" data-dir="E"></li> <!-- this needs to bend! -->
+                <li data-coords="20.6,3.4"></li>
+                <li data-coords="20.1,2.4" data-dir="N"></li>
+                <li data-coords="19.4,1.9" data-dir="W"></li>
+            </ul>
+
+            <ul data-color="rgb(255,255,0)" data-label="Yellow Line">
+                <li data-coords="14,21" data-labelPos="S" data-marker="interchange"><a href="#">West Roxbury\nStation</a></li>
+                <li data-coords="15,21"></li>
+                <li data-coords="17,19" data-labelPos="SE" data-marker="@station"><a href="#">Subway\nLine</a></li>
+                <li data-coords="19,17" data-labelPos="S" data-marker="interchange"><a href="#">Medical\nCenter\nMetro</a></li>
+                <li data-coords="19.8,17" data-dir="E"></li>
+                <li data-coords="20.8,16" data-dir="E"></li>
+                <li data-coords="20.8,3.2"></li>
+                <li data-coords="20.1,2.2" data-dir="N"></li>
+                <li data-coords="19.4,1.7" data-dir="W"></li>
+            </ul>
+
+            <ul data-color="rgb(0,0,255)" data-label="Blue Line 2">
+                <li data-coords="19.35,2"></li>
+                <li data-coords="20.4,1" data-dir="N"></li>
+                <li data-coords="22,1" data-marker="station" data-labelPos="SE"><a href="#">Subway\nLine</a></li>
+                <li data-coords="24,1" data-marker="station" data-labelPos="SE"><a href="#">Subway\nLine</a></li>
+                <li data-coords="26,1" data-marker="interchange" data-labelPos="SE"><a href="#">Boston\nAirport\nRuins</a></li>
+                <li data-coords="28,1" data-marker="station" data-labelPos="SE"><a href="#">Subway\nLine</a></li>
+                <li data-coords="30,1" data-marker="interchange" data-labelPos="SE"><a href="#">Revere\nBeach\nStation</a></li>
+            </ul>
+
+            <ul data-color="rgb(255,255,0)" data-label="Yellow Line 2">
+                <li data-coords="19.55,2" data-dir="W"></li>
+                <li data-coords="19.55,0" data-dir="W"></li>
+            </ul>
+
+            
+
+
+        </div>
+        <!--
+        <div id="legend"></div>
+        -->
+
+        <script type="text/javascript">
+            $(".subway-map").subwayMap({ debug: true });
+        </script>
+    </body>
+</html>
